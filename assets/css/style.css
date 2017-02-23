@@ -1,0 +1,80 @@
+body {
+	background-image: url("assets/images/ignasi_patterns_s.png");
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 3em;
+	color: #ffffff;
+	text-align: center;
+	background: rgba(1,134,225,0.6);
+	width: 20%;
+	margin: 1%;
+}
+
+.instructions {
+	margin: 1%;
+	padding: 1%;
+	line-height: 30px;
+	color: #ffffff;
+	font-family: "Ariel", sans-serif;
+	font-size: 16px;
+	font: #ffffff;
+	background: rgba(220,146,221,0.7);
+	width: 35%;
+	height: 50%;
+}
+
+.crystals {
+	margin: 1%;
+}
+
+.randomNumberGen {
+	margin: 1%;
+	padding: 1%;
+	width: 10%;
+	font-family: "Ariel", sans-serif;
+	font-size: 16px;
+	line-height: 32px;
+	color: #ffffff;
+	background: rgba(129,100,180,0.6);
+}
+
+.winsLosses {
+	position: relative;
+	top: -74px;
+	right: -185px;
+	margin: 1%;
+	padding: 1%;
+	width: 10%;
+	font-family: "Ariel", sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	background: rgba(231,47,109,0.7);
+
+
+}
+
+.yourTotalScore {
+	margin: 1%;
+	padding: 1%;
+	width: 10%;
+	font-family: "Ariel", sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: rgba(173,202,232,0.8);
+
+}
+
+.yourScore {
+	margin: 1%;
+	padding: 1%;
+	width: 10%;
+	font-family: "Ariel", sans-serif;
+	font-size: 16px;
+	line-height: 32px;
+	color: #ffffff;
+	background-color: rgba(173,202,232,0.8);
+}
+
+}
