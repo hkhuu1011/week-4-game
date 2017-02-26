@@ -1,5 +1,5 @@
 body {
-	background-image: url("assets/images/ignasi_patterns_s.png");
+	background-image: url("https://raw.githubusercontent.com/hkhuu1011/week-4-game/master/assets/images/ignasi_pattern_s.png");
 }
 
 h1 {
@@ -7,7 +7,7 @@ h1 {
 	line-height: 3em;
 	color: #ffffff;
 	text-align: center;
-	background: rgba(1,134,225,0.6);
+	background: rgba(1,134,225,0.5);
 	width: 20%;
 	margin: 1%;
 }
@@ -20,16 +20,12 @@ h1 {
 	font-family: "Ariel", sans-serif;
 	font-size: 16px;
 	font: #ffffff;
-	background: rgba(220,146,221,0.7);
+	background: rgba(220,146,221,0.6);
 	width: 35%;
 	height: 50%;
 }
 
-.crystals {
-	margin: 1%;
-}
-
-.randomNumberGen {
+.currentScore {
 	margin: 1%;
 	padding: 1%;
 	width: 10%;
@@ -37,7 +33,7 @@ h1 {
 	font-size: 16px;
 	line-height: 32px;
 	color: #ffffff;
-	background: rgba(129,100,180,0.6);
+	background: rgba(129,100,180,0.5);
 }
 
 .winsLosses {
@@ -50,23 +46,31 @@ h1 {
 	font-family: "Ariel", sans-serif;
 	font-size: 16px;
 	color: #ffffff;
-	background: rgba(231,47,109,0.7);
+	background: rgba(231,47,109,0.6);
+}
 
-
+.crystals {
+	margin: 1%;
+	position: relative;
+	top: -70px;
 }
 
 .yourTotalScore {
+	position: relative;
+	top: -70px;
 	margin: 1%;
 	padding: 1%;
 	width: 10%;
 	font-family: "Ariel", sans-serif;
 	font-size: 16px;
 	color: #ffffff;
-	background-color: rgba(173,202,232,0.8);
+	background-color: rgba(173,202,232,0.7);
 
 }
 
 .yourScore {
+	position: relative;
+	top: -70px;
 	margin: 1%;
 	padding: 1%;
 	width: 10%;
@@ -74,7 +78,7 @@ h1 {
 	font-size: 16px;
 	line-height: 32px;
 	color: #ffffff;
-	background-color: rgba(173,202,232,0.8);
+	background-color: rgba(173,202,232,0.7);
 }
 
 }
