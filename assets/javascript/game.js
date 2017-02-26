@@ -49,6 +49,15 @@ var getRandom = function(min, max) {
 			yourScore = crystals.crystal1.value + yourScore;
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
+			
+			if (yourScore === currentScore) {
+				wins++;
+				console.log("wins: " + wins);
+			} else if (yourScore > currentScore) {
+				losses++;
+				console.log("losses: " + losses);
+			}
+
 		})
 
 		//Click crystal2 to display
@@ -56,6 +65,14 @@ var getRandom = function(min, max) {
 			yourScore = crystals.crystal2.value + yourScore;
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
+			
+			if (yourScore === currentScore) {
+				wins++;
+				console.log("wins: " + wins);
+			} else if (yourScore > currentScore) {
+				losses++;
+				console.log("losses: " + losses);
+			}
 		})
 
 		//Click crystal3 to display
@@ -63,6 +80,14 @@ var getRandom = function(min, max) {
 			yourScore = crystals.crystal3.value + yourScore;
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
+			
+			if (yourScore === currentScore) {
+				wins++;
+				console.log("wins: " + wins);
+			} else if (yourScore > currentScore) {
+				losses++;
+				console.log("losses: " + losses);
+			}
 		})
 
 		//Click crystal4 to display
@@ -70,19 +95,18 @@ var getRandom = function(min, max) {
 			yourScore = crystals.crystal4.value + yourScore;
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
-		})	
-
-		//Wins and Losses
-		if (yourScore === currentScore) {
-			wins++;
-			console.log("wins: " + wins);
-		} else if (yourScore > currentScore) {
-			losses++;
-			console.log("losses: " + losses);
-		}
-
+			
+			if (yourScore === currentScore) {
+				wins++;
+				console.log("wins: " + wins);
+			} else if (yourScore > currentScore) {
+				losses++;
+				console.log("losses: " + losses);
+			}
+		})
 	
 	}
+
 
 
 
