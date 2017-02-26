@@ -34,7 +34,6 @@ var getRandom = function(min, max) {
 //Display random numer for Current Score and Crystals
 	var startGame = function() {
 		currentScore = getRandom(9,120);
-		yourScore = 0,
 
 		crystals.crystal1.value = getRandom(1,12);
 		crystals.crystal2.value = getRandom(1,12);
@@ -49,37 +48,37 @@ var getRandom = function(min, max) {
 		$('.crystals').on("click", ".crystal1", function () {
 			yourScore = crystals.crystal1.value + yourScore;
 			$('.yourScore').html(yourScore);
-
-			console.log(yourScore);
+			console.log("your score: " + yourScore);
 		})
 
 		//Click crystal2 to display
 		$('.crystals').on("click", ".crystal2", function () {
 			yourScore = crystals.crystal2.value + yourScore;
 			$('.yourScore').html(yourScore);
-
-			console.log(yourScore);
+			console.log("your score: " + yourScore);
 		})
 
 		//Click crystal3 to display
 		$('.crystals').on("click", ".crystal3", function () {
 			yourScore = crystals.crystal3.value + yourScore;
 			$('.yourScore').html(yourScore);
+			console.log("your score: " + yourScore);
 		})
 
 		//Click crystal4 to display
 		$('.crystals').on("click", ".crystal4", function () {
 			yourScore = crystals.crystal4.value + yourScore;
 			$('.yourScore').html(yourScore);
+			console.log("your score: " + yourScore);
 		})	
 
 		//Wins and Losses
 		if (yourScore === currentScore) {
 			wins++;
-			console.log("wins " + wins);
+			console.log("wins: " + wins);
 		} else if (yourScore > currentScore) {
 			losses++;
-			console.log("losses " + losses);
+			console.log("losses: " + losses);
 		}
 
 	
@@ -87,15 +86,7 @@ var getRandom = function(min, max) {
 
 
 
-
-
-
-// add();
 startGame();
 
 
 
-//Your total score
-
-
-//Wins and Losses
