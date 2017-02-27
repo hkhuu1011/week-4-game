@@ -31,9 +31,14 @@ var getRandom = function(min, max) {
 	return targetScore;
 };
 
-//Display random numer for Current Score and Crystals
+//Display random number for Current Score and Crystals
 	var startGame = function() {
 
+		//Zero out yourScore
+		yourScore = 0;
+		$('.yourScore').html(yourScore);
+
+		//Min and max for values
 		currentScore = getRandom(9,120);
 
 		crystals.crystal1.value = getRandom(1,12);
@@ -45,7 +50,7 @@ var getRandom = function(min, max) {
 		$('.currentScore').html(currentScore);
 		console.log("display current score: " + currentScore);
 	}
-	
+
 		//Click crystal1 to display
 		$('.crystals').on("click", ".crystal1", function () {
 			yourScore = crystals.crystal1.value + yourScore;
@@ -61,7 +66,6 @@ var getRandom = function(min, max) {
 				console.log("display win: " + wins);
 
 				//Reset Game
-				document.getElementClassName()
 				startGame();
 				
 			} else if (yourScore > currentScore) {
@@ -72,8 +76,7 @@ var getRandom = function(min, max) {
 				console.log("display loss: " + losses);
 
 				//Reset Game
-				startGame();
-				
+				startGame();	
 			}
 		})
 
@@ -102,8 +105,7 @@ var getRandom = function(min, max) {
 				console.log("display loss: " + losses);
 
 				//Reset Game
-				startGame();
-				
+				startGame();	
 			}
 		})
 
@@ -132,8 +134,7 @@ var getRandom = function(min, max) {
 				console.log("display loss: " + losses);
 
 				//Reset Game
-				startGame();
-				
+				startGame();	
 			}
 		})
 
@@ -163,10 +164,7 @@ var getRandom = function(min, max) {
 
 				//Reset Game
 				startGame();
-
 			}
 		})
-	
-	
 
 startGame();
