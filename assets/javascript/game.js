@@ -33,6 +33,7 @@ var getRandom = function(min, max) {
 
 //Display random numer for Current Score and Crystals
 	var startGame = function() {
+		yourScore = 0;
 		currentScore = getRandom(9,120);
 
 		crystals.crystal1.value = getRandom(1,12);
@@ -53,11 +54,18 @@ var getRandom = function(min, max) {
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
+
+				$('.wins').html('Wins: ' + wins);
+				console.log("display win: " + wins);
+				startGame();
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
-			}
 
+				$('.losses').html("Losses: " + losses);
+				console.log("display loss: " + losses);
+				startGame();
+			}
 		})
 
 		//Click crystal2 to display
@@ -69,9 +77,17 @@ var getRandom = function(min, max) {
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
+
+				$('.wins').html("Wins: " + wins);
+				console.log("display win: " + wins);
+				startGame();
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
+
+				$('.losses').html("Losses: " + losses);
+				console.log("display loss: " + losses);
+				startGame();
 			}
 		})
 
@@ -84,9 +100,17 @@ var getRandom = function(min, max) {
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
+
+				$('.wins').html("Wins: " + wins);
+				console.log("display win: " + wins);
+				startGame();
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
+
+				$('.losses').html("Losses: " + losses);
+				console.log("display loss: " + losses);
+				startGame();
 			}
 		})
 
@@ -99,18 +123,20 @@ var getRandom = function(min, max) {
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
+
+				$('.wins').html("Wins: " + wins);
+				console.log("display win: " + wins);
+				startGame();
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
+
+				$('.losses').html("Losses: " + losses);
+				console.log("display loss: " + losses);
+				startGame();
 			}
 		})
 	
 	}
 
-
-
-
 startGame();
-
-
-
