@@ -33,7 +33,7 @@ var getRandom = function(min, max) {
 
 //Display random numer for Current Score and Crystals
 	var startGame = function() {
-		yourScore = 0;
+
 		currentScore = getRandom(9,120);
 
 		crystals.crystal1.value = getRandom(1,12);
@@ -44,27 +44,36 @@ var getRandom = function(min, max) {
 		// Display random number Current Score
 		$('.currentScore').html(currentScore);
 		console.log("display current score: " + currentScore);
-
+	}
+	
 		//Click crystal1 to display
 		$('.crystals').on("click", ".crystal1", function () {
 			yourScore = crystals.crystal1.value + yourScore;
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
 			
+			//Display score
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
 
 				$('.wins').html('Wins: ' + wins);
 				console.log("display win: " + wins);
+
+				//Reset Game
+				document.getElementClassName()
 				startGame();
+				
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
 
 				$('.losses').html("Losses: " + losses);
 				console.log("display loss: " + losses);
+
+				//Reset Game
 				startGame();
+				
 			}
 		})
 
@@ -74,20 +83,27 @@ var getRandom = function(min, max) {
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
 			
+			//Display Score
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
 
 				$('.wins').html("Wins: " + wins);
 				console.log("display win: " + wins);
+
+				//Reset Game
 				startGame();
+				
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
 
 				$('.losses').html("Losses: " + losses);
 				console.log("display loss: " + losses);
+
+				//Reset Game
 				startGame();
+				
 			}
 		})
 
@@ -97,20 +113,27 @@ var getRandom = function(min, max) {
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
 			
+			//Display score
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
 
 				$('.wins').html("Wins: " + wins);
 				console.log("display win: " + wins);
+
+				//Reset Game
 				startGame();
+				
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
 
 				$('.losses').html("Losses: " + losses);
 				console.log("display loss: " + losses);
+
+				//Reset Game
 				startGame();
+				
 			}
 		})
 
@@ -120,23 +143,30 @@ var getRandom = function(min, max) {
 			$('.yourScore').html(yourScore);
 			console.log("your score: " + yourScore);
 			
+			//Display Score
 			if (yourScore === currentScore) {
 				wins++;
 				console.log("wins: " + wins);
 
 				$('.wins').html("Wins: " + wins);
 				console.log("display win: " + wins);
+
+				//Reset Game
 				startGame();
+				
 			} else if (yourScore > currentScore) {
 				losses++;
 				console.log("losses: " + losses);
 
 				$('.losses').html("Losses: " + losses);
 				console.log("display loss: " + losses);
+
+				//Reset Game
 				startGame();
+
 			}
 		})
 	
-	}
+	
 
 startGame();
